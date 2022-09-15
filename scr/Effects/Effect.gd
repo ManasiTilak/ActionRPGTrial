@@ -1,3 +1,6 @@
+#This script hendles animations and is share with animated sprits of grass ka getting cut wala effect,
+# bat ka dying wala effect and the animation sword hit ka
+
 extends AnimatedSprite
 
 func _ready():
@@ -7,4 +10,5 @@ func _ready():
 
 
 func _on_animation_finished():
-	queue_free()
+	queue_free() #this quefree , frees the animation NOT the player, enemy or object
+	pass
